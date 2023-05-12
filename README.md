@@ -1,6 +1,8 @@
 # 42libft
 42's first project as a cadet, create you own C library.
+
 Duration :  about a month.
+
 Author : luizedua
 # 
 # WARNING : CODING IN PROGRESS PLEASE WAIT 
