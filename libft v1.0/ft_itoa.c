@@ -6,13 +6,13 @@
 /*   By: luizedua <luizedua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/10 12:16:57 by luizedua          #+#    #+#             */
-/*   Updated: 2023/05/16 15:36:03 by luizedua         ###   ########.fr       */
+/*   Updated: 2023/05/17 12:44:25 by luizedua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	digits_counter(long int nb)
+static int	digits_counter(long int nb)
 {
 	int	c;
 
@@ -27,7 +27,7 @@ int	digits_counter(long int nb)
 	return (c);
 }
 
-void	break_numbers(long int nb, char *pointer_to_number, long int *i)
+static void	break_numbers(long int nb, char *pointer_to_number, long int *i)
 {
 	if (nb > 9)
 		break_numbers((nb / 10), pointer_to_number, i);
@@ -59,19 +59,3 @@ char	*ft_itoa(int n)
 	allocated_number[digits_size] = '\0';
 	return (allocated_number);
 }
-
-// int main()
-// {
-// 	char *teste;
-// 	teste = ft_itoa(-2147483648);
-// 	printf("teste itoa: %s\n", teste);
-// 	free(teste);
-// 	// 
-// 	teste = ft_itoa(0);
-// 	printf("teste itoa 1: %s\n", teste);
-// 	free(teste);
-// 	// 
-// 	teste = ft_itoa(47);
-// 	printf("teste itoa 2: %s\n", teste);
-// 	free(teste);
-// }

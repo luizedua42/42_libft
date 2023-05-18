@@ -6,9 +6,11 @@
 /*   By: luizedua <luizedua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 11:04:47 by luizedua          #+#    #+#             */
-/*   Updated: 2023/04/28 10:05:52 by luizedua         ###   ########.fr       */
+/*   Updated: 2023/05/17 12:42:40 by luizedua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

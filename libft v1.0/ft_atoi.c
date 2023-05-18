@@ -6,12 +6,11 @@
 /*   By: luizedua <luizedua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 09:45:02 by luizedua          #+#    #+#             */
-/*   Updated: 2023/05/05 13:39:14 by luizedua         ###   ########.fr       */
+/*   Updated: 2023/05/18 13:06:13 by luizedua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

@@ -6,11 +6,10 @@
 /*   By: luizedua <luizedua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 10:21:36 by luizedua          #+#    #+#             */
-/*   Updated: 2023/05/16 15:46:32 by luizedua         ###   ########.fr       */
+/*   Updated: 2023/05/17 12:46:18 by luizedua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 static int	set_search(char c, char const *set)

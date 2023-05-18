@@ -6,9 +6,11 @@
 /*   By: luizedua <luizedua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 10:54:28 by luizedua          #+#    #+#             */
-/*   Updated: 2023/05/16 13:16:53 by luizedua         ###   ########.fr       */
+/*   Updated: 2023/05/17 12:44:16 by luizedua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

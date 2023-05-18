@@ -6,12 +6,11 @@
 /*   By: luizedua <luizedua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 12:26:26 by luizedua          #+#    #+#             */
-/*   Updated: 2023/05/16 15:42:28 by luizedua         ###   ########.fr       */
+/*   Updated: 2023/05/17 12:41:55 by luizedua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

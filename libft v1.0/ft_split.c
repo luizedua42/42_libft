@@ -6,7 +6,7 @@
 /*   By: luizedua <luizedua@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 19:28:36 by luizedua          #+#    #+#             */
-/*   Updated: 2023/05/16 15:39:51 by luizedua         ###   ########.fr       */
+/*   Updated: 2023/05/18 16:42:02 by luizedua         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,20 @@ static size_t	count_words(char const *s, char c)
 			index++;
 	}
 	return (words);
+}
+
+static int	free_all(char **bfree)
+{
+	char	**tmp;
+
+	tmp = bfree;
+	while (!bfree)
+	{
+		free(*bfree);
+		bfree++;
+	}
+	free(tmp);
+	return (1);
 }
 
 static void	alloc_words(char const *s, char c, char **array)
@@ -54,8 +68,9 @@ static void	alloc_words(char const *s, char c, char **array)
 		}
 		if (count_array != 0)
 			array[words++] = ft_substr(&s[old_index], 0, count_array);
+		if (words > 0 && array[words - 1] == NULL && free_all(array))
+			return ;
 	}
-	array[words] = NULL;
 }
 
 char	**ft_split(char const *s, char c)
@@ -66,7 +81,7 @@ char	**ft_split(char const *s, char c)
 	if (s == NULL)
 		return (NULL);
 	words = count_words(s, c);
-	array = (char **)malloc((words + 1) * sizeof(char *));
+	array = (char **)ft_calloc((words + 1), sizeof(char *));
 	if (array == NULL)
 		return (NULL);
 	alloc_words(s, c, array);
