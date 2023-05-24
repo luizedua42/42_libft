@@ -1,4 +1,3 @@
-##ft_lstmap_bonus.c
 NAME := libft.a
 OBJ = $(FTS:%.c=%.o)
 BOBJ = $(BFTS:%.c=%.o)
