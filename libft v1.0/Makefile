@@ -29,3 +29,4 @@ bonus: $(BOBJ)
 $(BOBJ): 
 	cc -Wall -Wextra -Werror -c $(@:.o=.c) -o $@
 	ar -rcs $(NAME) $@
+	
