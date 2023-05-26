@@ -4,6 +4,8 @@
 
 </div>
 
+[![norminette](https://github.com/luizedua42/42libft/actions/workflows/norminette.yml/badge.svg)](https://github.com/luizedua42/42libft/actions/workflows/norminette.yml)
+
 ## 42's first project as a cadet, create you own C library.
 
 ![Alt text](mdassets/Screenshot%20from%202023-05-24%2014-16-33.png)
