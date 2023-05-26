@@ -8,6 +8,8 @@
 
 ![Alt text](mdassets/Screenshot%20from%202023-05-24%2014-16-33.png)
 
+My grade is off from what i have 'cause i've sent the makefile with some wrong file names, don't worry, the one up here is  100% correct. 
+
 <div align = center>
 
 ![](https://game.42sp.org.br/static/assets/achievements/libftm.png)
