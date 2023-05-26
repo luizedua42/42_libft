@@ -4,7 +4,7 @@
 
 </div>
 
-[![norminette](https://github.com/luizedua42/42libft/actions/workflows/norminette.yml/badge.svg)](https://github.com/luizedua42/42libft/actions/workflows/norminette.yml)
+[![norminette](https://github.com/luizedua42/42libft/actions/workflows/norminette.yml/badge.svg)](https://github.com/luizedua42/42libft/actions/workflows/norminette.yml) [![build](https://github.com/luizedua42/42libft/actions/workflows/build.yml/badge.svg)](https://github.com/luizedua42/42libft/actions/workflows/build.yml)
 
 ## 42's first project as a cadet, create you own C library.
 
