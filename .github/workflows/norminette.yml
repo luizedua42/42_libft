@@ -1,26 +1,18 @@
 name: norminette
+on: [push, pull_request]
 
-on:
-  push:
-    branches:
-      - master
-      
 jobs:
-  norminette:
+
+  norminette_v2_job:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory:  ../
+    name: norminette v2
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.9
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip setuptools
-        python -m pip install norminette
-    - name: Run with norminette
-      run: |
-        norminette
+    - uses: alexandregv/norminette-action@v2
+
+  norminette_v3_job:
+    runs-on: ubuntu-latest
+    name: norminette v3
+    steps:
+    - uses: actions/checkout@v2
+    - uses: alexandregv/norminette-action@v3
